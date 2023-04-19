@@ -1,0 +1,4 @@
+*.ai
+*.psd
+*.log
+node_modules/
