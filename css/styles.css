@@ -1,139 +1,122 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap');
 
-*{
-    font-family: 'Oswald', sans-serif;
-
-
+* {
+  font-family: 'Oswald', sans-serif;
 }
 
-    
-.navegador{
-    background-color: rgb(90, 121, 141);
+.navegador {
+  background-color: rgb(90, 121, 141);
 }
 
-    .navegador ul li a{
-        font-size:2em;
-        color: azure;
-    }
-
-    nav ul li{
-        display: inline-block;
-        margin-right: 10px;
-    }
-
-
-h1{
-    color:rgb(30, 32, 58);
-    display: inline-block;
-    font-size: 2.5em;
-    line-height: 2em;
-    text-align: center;
-    margin: top 2px;
-}  
-
-h2{
-    font-size: 2.5em;
-    padding: 30px;
+.navegador ul li a {
+  font-size: 2em;
+  color: azure;
 }
 
-.padding{
-    padding: 20px;
-    margin: 20px;
-}
-h3{
-    text-align:center;
-    display: inline-block;
-    padding-right: 10px;
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
 }
 
-    
+h1 {
+  color: rgb(30, 32, 58);
+  display: inline-block;
+  font-size: 2.5em;
+  line-height: 2em;
+  text-align: center;
+  margin-top: 2px;
+}
 
+h2 {
+  font-size: 2.5em;
+  padding: 30px;
+}
+
+.padding {
+  padding: 20px;
+  margin: 20px;
+}
+
+h3 {
+  text-align: center;
+  display: inline-block;
+  padding-right: 10px;
+}
 
 .grid-container section div img {
-width: 95%;
+  width: 95%;
 }
 
-
-.texto-centrado{
-    text-align: center;
+.texto-centrado {
+  text-align: center;
 }
 
-.colorTextoBlanco{
-    color:rgb(225, 235, 235);
+.colorTextoBlanco {
+  color: rgb(225, 235, 235);
 }
-.fondoAzul{
-    background-color:rgb(192, 195, 204);
+
+.fondoAzul {
+  background-color: rgb(192, 195, 204);
 }
-.colorTextoGris{
-    color: dimgrey;
-    
+
+.colorTextoGris {
+  color: dimgrey;
 }
- 
-figcaption{
+
+figcaption {
+  font-size: 1.5em;
+}
+
+.contenedor {
+  width: 400px;
+  background-color: rgb(192, 195, 204);
+  margin-left: 50px;
+}
+
+/* Estilos para dispositivos con un ancho máximo de 600px */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
     font-size: 1.5em;
-}
-    
-.contenedor{
-    
-    width: 400px;
-   
-    background-color:rgb(192, 195, 204);
-   margin-left: 50px;
-    
-   
-
-}
-
-  
-   
-
-.leyenda{
-    display: flex;
-    flex-direction: column;
-    
-    
-}     
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    padding:10px
-    
-    
+    padding: 15px;
   }
-  
-  .item {
-    text-align: center;
-    width:350px;
+  h3 {
+    font-size: 1.5em;
+  }
+  .padding {
     padding: 10px;
-    
+    margin: 10px;
   }
-.imagenes{
-    border-radius: 20px;
-    border:solid 2px;
-    border-color:dimgrey;
-
-    
-}
-
-footer ul li a {
-    
-    margin-right: 15px;   
-    font-weight: 500;
-    color:azure
-    
-}
-footer ul{
-    display: inline-block;
-   
-}
-footer ul li{
-    list-style: none;
-    display:inline-block;
-    margin-right: 15px;
-}
-footer a img{
-    width: 50px;
-    padding: 10px 10px;
+  .contenedor {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .grid-container section div img {
+    width: 100%;
+    max-width: 300px;
+  }
+  .navegador ul {
+    display: none;
+  }
+  .navegador .icono-menu {
+    display: block;
+    float: right;
+    padding: 28px 20px;
+    cursor: pointer;
+  }
+  .navegador .icono-menu i {
+    color: white;
+    font-size: 1.5em;
+  }
+  .navegador.responsive ul {
+    display: block;
+    text-align: center;
+  }
+  .navegador.responsive ul li {
+    display: block;
+    margin: 10px 0;
+  }
 }
